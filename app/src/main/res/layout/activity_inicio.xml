@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/splash_background">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ut" />
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="200dp"
+        android:fontFamily="@font/abril_fatface"
+        android:text="Bienvenido"
+        android:layout_centerHorizontal="true"
+        android:textColor="#199141"
+        android:textSize="60sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="700dp"
+        android:fontFamily="@font/abril_fatface"
+        android:text="A mi biblioteca"
+        android:textColor="#199141"
+
+        android:textSize="38dp"
+
+        tools:text="A mi biblioteca" />
+
+</RelativeLayout>

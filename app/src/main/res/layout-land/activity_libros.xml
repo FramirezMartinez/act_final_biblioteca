@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="690dp"
+        android:layout_height="318dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="89dp"
+        android:layout_marginBottom="4dp">
+
+        <LinearLayout
+            android:id="@+id/pdfContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+        </LinearLayout>
+
+    </ScrollView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- ImageButton Menos -->
+        <ImageButton
+            android:id="@+id/menos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="19dp"
+            android:background="@android:color/transparent"
+            app:srcCompat="@android:drawable/button_onoff_indicator_off" />
+
+        <!-- ImageView Regresar -->
+
+        <!-- ImageButton Más -->
+
+        <!-- TextView Zoom -->
+        <ImageView
+            android:id="@+id/regresar"
+            android:layout_width="63dp"
+            android:layout_height="45dp"
+            android:layout_below="@id/menos"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="23dp"
+            android:layout_marginTop="-22dp"
+            app:srcCompat="@android:drawable/ic_menu_revert" />
+
+        <ImageButton
+            android:id="@+id/mas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/menos"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="-17dp"
+            android:layout_marginEnd="176dp"
+            android:background="@android:color/transparent"
+            app:srcCompat="@android:drawable/ic_menu_add" />
+
+        <TextView
+            android:id="@+id/zoom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/menos"
+            android:layout_marginEnd="42dp"
+            android:layout_toStartOf="@id/menos"
+            android:text="Zoom"
+            android:textSize="15sp"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+</RelativeLayout>

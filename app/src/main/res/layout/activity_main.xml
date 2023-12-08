@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- ImageView para mostrar la imagen de fondo sin cambios -->
+    <ImageView
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:src="@drawable/ut2"
+        android:scaleType="centerCrop"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="300dp"
+        android:layout_centerHorizontal="true"
+
+        />
+
+    <!-- Contenedor de RecyclerView y SearchView -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:padding="8dp">
+
+        <!-- EditText como buscador -->
+        <EditText
+            android:id="@+id/editTextSearch"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/borde"
+            android:drawableStart="@android:drawable/ic_search_category_default"
+            android:drawableLeft="@android:drawable/ic_search_category_default"
+            android:hint="Buscar: autor, nombre libro"
+            android:inputType="text"
+            android:imeOptions="actionDone"
+            android:paddingStart="35dp" />
+
+        <!-- Spinner -->
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextSearch"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/borde"
+            android:entries="@array/spinner_items"
+            android:padding="8dp" />
+
+        <!-- RecyclerView -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/spinner"
+            android:layout_marginTop="20dp"
+            android:padding="8dp"
+            android:clipToPadding="false"
+            android:background="@android:color/transparent"
+            tools:listitem="@layout/myadapter" />
+    </RelativeLayout>
+</RelativeLayout>

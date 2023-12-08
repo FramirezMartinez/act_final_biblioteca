@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">RecicleView_CardView</string>
+    <string name="el_hombre_anumerico">el_hombre_anumerico</string>
+    <string name="este_perro_es_el_m_s_valiente_porque_siempre_protege_a_finn">Este perro es el más valiente porque siempre protege a Finn</string>
+    <string name="contenido">Contenido:</string>
+
+    <string-array name="spinner_items">
+        <item>Seleccione categoría</item>
+        <item>Video juegos</item>
+        <item>Ciencia</item>
+        <item>Tecnología</item>
+        <item>Literatura</item>
+        <item>Historia</item>
+        <item>Otros</item>
+
+    </string-array>
+    <integer name="columnas">3</integer>
+</resources>
